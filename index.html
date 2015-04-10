@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="boardgameShop">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/_index.css" />
+    </head>
+    <body>
+        <div class="productPage">
+            <div ng-controller="ShopController as shop">
+                <div ng-repeat="product in shop.products">
+                    <h2>{{product.name}}</h2>
+                    <h3>{{product.price}}</h3>
+                    <h3>Number of Players: {{product.players}}</h3>
+                    <p>{{product.description}}</p>
+                    <button class="add-to-cart" ng-show="shop.product.canPurchase">Add to Cart</button>
+                    <hr />
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="vendor-js/angular/angular.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
