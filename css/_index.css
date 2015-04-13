@@ -1,4 +1,4 @@
-body {
+.product-page {
     max-width: 1600px;
     min-width: 1024px;
     margin-left:20%;
@@ -15,4 +15,8 @@ body {
 .add-to-cart:hover {
     background-color: #fff;
     color: #802420;
+}
+
+.product-header {
+    margin-bottom: 20px;
 }

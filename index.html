@@ -5,18 +5,56 @@
         <link rel="stylesheet" type="text/css" href="css/_index.css" />
     </head>
     <body>
-        <div class="productPage">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container-fluid">
+                <div class="nav-header">
+                    <a class="navbar-brand" href="#">Boardgame Shop</a>
+                </div>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">available games</a>
+                    </li>
+                    <li>
+                        <a href="#">pre-order</a>
+                    </li>
+                    <li>
+                        <a href="#">help</a>
+                    </li>
+                    <li>
+                        <a href="#">sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="product-page">
             <div ng-controller="ShopController as shop">
                 <div ng-repeat="product in shop.products">
-                    <h2>{{product.name}}</h2>
-                    <h3>{{product.price}}</h3>
-                    <h3>Number of Players: {{product.players}}</h3>
+                    <div class="row product-header">
+                        <div class="col-md-6">
+                            <img src="" alt="Image not found" />
+                        </div>
+                        <div class="col-md-6">
+                            <h2><a href="#">{{product.name}}</a></h2>
+                            <h4>{{product.price}}</h4>
+                            <h4>Number of Players: {{product.players}}</h4>
+                            <h4>Difficulty: {{product.difficulty}}</h4>
+                            <button class="add-to-cart" ng-show="{{product.canPurchase}}">Add to Cart</button>
+                        </div>
+                    </div>
                     <p>{{product.description}}</p>
-                    <button class="add-to-cart" ng-show="shop.product.canPurchase">Add to Cart</button>
+                    <p>{{product.storage}}</p>
+                    <a href="#">more details</a>
                     <hr />
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="vendor-js/bootstrap/bootstrap.min.js"></script>
         <script type="text/javascript" src="vendor-js/angular/angular.min.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
     </body>
