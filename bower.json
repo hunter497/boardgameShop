@@ -1,0 +1,17 @@
+{
+  "name": "boardgameShop",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hunter497/boardgameShop",
+  "authors": [
+    "Nick Hunter <hunter.497@gmail.com>"
+  ],
+  "description": "sample angular boardgame shop site",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

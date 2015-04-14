@@ -1,0 +1,25 @@
+.product-page {
+  max-width: 1600px;
+  min-width: 1024px;
+  margin-left:20%;
+  margin-right: 20%;
+
+  .add-to-cart {
+    background-color: #802420;
+    border: 3px solid #802420;
+    color: #fff;
+    width: 200px;
+    height: 35px;
+  }
+
+  .add-to-cart:hover {
+    background-color: #fff;
+    color: #802420;
+  }
+
+  .product-header {
+    margin-bottom: 20px;
+  }
+}
+
+
