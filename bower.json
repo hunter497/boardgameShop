@@ -7,6 +7,9 @@
   ],
   "description": "sample angular boardgame shop site",
   "license": "MIT",
+  "dependencies": {
+    "angular-route": "~1.3.0"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
